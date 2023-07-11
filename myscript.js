@@ -11,25 +11,25 @@ Quando l’utente clicca su ogni cella, la cella cliccata si colora di azzurro e
 
 
 //quindi devo creare 10 righe da 10 caselle
-/**
- * @type {HTMLSelectElement}  mi serve per il value . per dire a sqaureCountsQui sara un elemento di tipo html select
- */
+
 //va a chiamare il select con name sqaureCounts
-const sqaureCountsQui = document.querySelector("[name='sqaureCounts']");
+
+
+
 
 //va a chiamare la id# btnjs
-const btnJsQui =  document.querySelector("#btnjs")
+const btnJsQui = document.querySelector("#btnjs");
 
-//va a chiamare il div con id gridContainer colui che avra le griglie al suo interno
-const gridContainerQui = document.querySelector("#gridContainer")
-
-//ilvalue appena messo da errore ,  perche? riga 14 16 il risultato
-const sqaureCounts = parseInt(sqaureCountsQui.value); 
+//va a chiamare il div con id gridContainer colui che avrà le griglie al suo interno
+const gridContainerQui = document.querySelector("#gridContainer");
 
 //vado a mettere il click sul btnjs
 btnJsQui.addEventListener("click", function () {
-    console.log("ciao")//funziona io click
+    //console.log("ciao"); // funziona, viene visualizzato "ciao" sulla console dentro il click
 
-    console.log(sqaureCountsQui) // lo sqaureCountsQui sembra funzionare pero sulla consol mi fa uscire html non il numero che metto. perche ?
-})
+    const sqaureCounts = parseInt(document.querySelector("[name='sqaureCounts']").value);
+    console.log(sqaureCounts); //adesso  funziona, verrà visualizzato il valore del campo di input con l'attributo name="sqaureCounts" 100 81 49
 
+//so quanti elementi vanno stampati
+//generazione griglia
+});
